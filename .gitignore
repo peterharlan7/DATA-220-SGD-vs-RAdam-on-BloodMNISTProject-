@@ -216,5 +216,26 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+# --- Group 7 project additions ---
+sample_data/
+
+# Dataset (downloaded by the medmnist package)
+data/
+*.npz
+
+# Training checkpoints (init.pt is NOT ignored — commit it)
+checkpoints/
+*.pth
+*.ckpt
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Secrets
+kaggle.json
+
 # Streamlit
 .streamlit/secrets.toml
