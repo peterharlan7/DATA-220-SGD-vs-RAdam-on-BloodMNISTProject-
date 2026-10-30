@@ -1,5 +1,11 @@
 """BloodMNIST loading. Owner: Peter (Trello: [S1] BloodMNIST data pipeline).
 
+Downloads BloodMNIST into data/, which your .gitignore already keeps out of git.
+Checks that the splits are exactly 11,959 / 1,712 / 3,421 images.
+Normalizes the images and turns the labels into plain numbers so the training loop can use them.
+Shuffles the training batches the same way on every run with the same seed, so SGD and RAdam see identical batch order.
+Has two functions that make your card’s slide figures: a sample image grid and a class-count bar chart.
+
 Everyone else only calls get_loaders(), so keep this function name and its
 return value the same even if the inside changes.
 """
