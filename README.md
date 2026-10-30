@@ -9,10 +9,10 @@ Team: Ashritha, Jason, Peter, Sai
 
 ```
 src/          shared code, imported by every notebook
-  utils.py    seeds, device, optimizer-state memory      (Peter)
-  data.py     BloodMNIST loading + DataLoaders           (Peter)
-  model.py    ResNet-8                                   (Jason)
-  train.py    training / evaluation loop + CSV logging   (Ashritha)
+  utils.py    seeds, device, optimizer-state memory      
+  data.py     BloodMNIST loading + DataLoaders           
+  model.py    ResNet-8                                   
+  train.py    training / evaluation loop + CSV logging   
 notebooks/    one notebook per experiment or person
 results/      CSV logs and PNG plots (committed)
 init.pt       shared starting weights (committed, never regenerate)
