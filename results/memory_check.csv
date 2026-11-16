@@ -1,0 +1,4 @@
+optimizer,bytes_before_first_step,measured_bytes,hand_calc_bytes,match,measured_MiB,breakdown
+"SGD (plain, as used)",0,0,0,True,0.0,-
+"RAdam (defaults, as used)",0,623412,623412,True,0.5945,"step=116 + exp_avg=311,648 + exp_avg_sq=311,648"
+SGD + momentum 0.9 (reference only),0,311648,311648,True,0.2972,"momentum_buffer=311,648"
